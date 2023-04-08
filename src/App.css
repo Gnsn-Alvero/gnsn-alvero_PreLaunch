@@ -1,6 +1,19 @@
 * {
-    background-color: #f0f5f9;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f0f5f9; */
 }
+
+
+@font-face {
+    font-family: 'Otto Attac Type';
+    src: url('./fonts/OTTOATTACTYPE.ttf') format('truetype'); 
+  }
+  
+  @font-face {
+    font-family: 'Poison';
+    src: url('./fonts/Poison-Regular.ttf') format('truetype');
+  }
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
