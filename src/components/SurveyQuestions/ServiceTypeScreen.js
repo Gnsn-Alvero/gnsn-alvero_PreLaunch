@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SurveyBtn from "./SurveyBtn";
+import gnsnimg from "../../images/GnsnAlvero.png";
 
 const CenterHeading = styled.p`
     text-align: center;
@@ -33,9 +34,41 @@ const Footer = styled.div`
     text-align: center;
 `;
 
+const Logo =styled.div`
+z-index:2;
+    position: absolute;
+width: 568px;
+height: 100px;
+left: 580px;
+top: 35px;
+`
+
+const GnsnWrapper = styled.img`
+    filter: brightness(0);
+    z-index:2;
+  /* position: absolute; */
+  width: 568px;
+  height: 100px;
+  /* left: 580px; */
+  /* top: 15px; */
+  font-family: "Otto Attac Type";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #f0f5f9;
+`;
+
 function ServiceTypeScreen() {
     return (
         <div>
+            <Logo>
+        <GnsnWrapper src={gnsnimg}></GnsnWrapper>
+      </Logo>
             <CenterHeading>HOW YOU WANNA PROVIDE YOUR SERVICE?</CenterHeading>
             <ButtonContainer>
                 <SurveyBtn title={"I HAVE A PHYSICAL SHOP"} />
